@@ -55,6 +55,10 @@ cover/
 *.mo
 *.pot
 
+# Pytest
+.pytest_cache/
+.pytest_cache
+
 # Django stuff:
 *.log
 local_settings.py
