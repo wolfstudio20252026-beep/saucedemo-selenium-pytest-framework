@@ -1,6 +1,6 @@
 # Saucedemo Selenium Pytest Framework
 
-Автоматизація UI-тестування для навчального інтернет-магазину [SauceDemo](https://saucedemo.com) з використанням Python, Selenium WebDriver та тестового фреймворку Pytest.
+Автоматизація UI-тестування для навчального інтернет-магазину [Automation Exercise](https://www.automationexercise.com/) з використанням Python, Selenium WebDriver та тестового фреймворку Pytest.
 
 ## 🚀 Стек технологій
 * **Мова програмування:** Python 3.x
