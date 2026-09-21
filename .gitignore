@@ -59,6 +59,10 @@ cover/
 .pytest_cache/
 .pytest_cache
 
+#Allure
+results/
+allure-report/
+
 # Django stuff:
 *.log
 local_settings.py

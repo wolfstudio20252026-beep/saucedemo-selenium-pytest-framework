@@ -1,5 +1,6 @@
 from .base_page import BasePage
 from selenium.webdriver.common.by import By
+from allure import step
 
 search_selector = (By.ID, 'search_product')
 button_selector = (By.ID, 'submit_search')
@@ -9,7 +10,8 @@ class FindElementPage(BasePage):
         super().__init__(driver)
 
     def open(self):
-        self.driver.get('https://www.automationexercise.com/products')
+        with step('Open browser'):
+            self.driver.get('https://www.automationexercise.com/products')
 
     @property
     def search(self):
@@ -17,7 +19,8 @@ class FindElementPage(BasePage):
     
     @property
     def search_is_is_displayed(self):
-        return self.search.is_displayed()
+        with step('Check the search is displayed'):
+            return self.search.is_displayed()
 
     @property
     def button(self):
@@ -25,10 +28,13 @@ class FindElementPage(BasePage):
     
     @property
     def button_is_is_displayed(self):
-        return self.button.is_displayed()
+        with step('Check the button is displayed'):
+            return self.button.is_displayed()
 
     def set_text_search(self, text : str):
-        self.search.send_keys(text)
+        with step('Set text in search'):
+            self.search.send_keys(text)
 
     def click_button(self):
-        self.button.click()    
+        with step('Click the button'):
+            self.button.click()
